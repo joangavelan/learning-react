@@ -1,10 +1,10 @@
 import React from 'react'
-import MyComponent from './advanced-guides/Code-Splitting'
+import Header from './advanced-guides/Context'
 
 const App = () => {
   return (
     <div className='app'>
-      <MyComponent />
+      <Header />
     </div>
   )
 }

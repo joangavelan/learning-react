@@ -1,11 +1,10 @@
 import React from 'react'
-import Counter from './hooks/Hooks'
-import './index.css'
+import Main from './advanced-guides/context/Main'
 
 const App = () => {
   return (
     <div className='app'>
-      <Counter />
+      <Main />
     </div>
   )
 }

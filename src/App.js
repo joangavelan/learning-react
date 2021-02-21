@@ -1,11 +1,10 @@
 import React from 'react'
-import Example from './hooks/Use-Effect'
-import Counter from './hooks/Hooks'
+import AutoFocusTextInput from './advanced-guides/Refs-and-the-DOM'
 
 const App = () => {
   return (
     <div className='app'>
-      <Counter />
+      <AutoFocusTextInput />
     </div>
   )
 }

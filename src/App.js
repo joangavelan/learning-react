@@ -1,13 +1,11 @@
 import React from 'react'
-import Main from './advanced-guides/context/Main'
-import ErrorBoundary from './advanced-guides/Error-Boundaries'
+import Example from './hooks/Use-Effect'
+import Counter from './hooks/Hooks'
 
 const App = () => {
   return (
     <div className='app'>
-      <ErrorBoundary>
-        <Main />
-      </ErrorBoundary>
+      <Counter />
     </div>
   )
 }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../index.css';
 
 // function Counter() {
@@ -16,7 +16,7 @@ import '../index.css';
 
 function Counter() {
   const [count, setCount] = useState(0);
-  const [theme, setTheme] = useState(null);
+  const [color, setColor] = useState('');
 
   function increment() {
     setCount((count) => count + 1);
@@ -26,10 +26,20 @@ function Counter() {
     setCount((count) => count - 1);
   }
 
+  useEffect(() => {
+    if(count === 0) {
+      setColor('black')
+    } else if(count > 0) {
+      setColor('green')
+    } else {
+      setColor('red')
+    }
+  })
+
   return (
     <>
       <button onClick={decrement}>-</button>
-      <span style={{color: theme}}>{count}</span>
+      <span style={{color: color}}>{count}</span>
       <button onClick={increment}>+</button>
     </>
   );

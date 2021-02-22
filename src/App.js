@@ -1,10 +1,10 @@
 import React from 'react'
-import AutoFocusTextInput from './advanced-guides/Refs-and-the-DOM'
+import ForRefDemo from './advanced-guides/refs/Forwarding-Refs'
 
 const App = () => {
   return (
     <div className='app'>
-      <AutoFocusTextInput />
+      <ForRefDemo />
     </div>
   )
 }

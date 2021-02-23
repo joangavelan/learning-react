@@ -1,10 +1,10 @@
 import React from 'react'
-import ForRefDemo from './advanced-guides/refs/Forwarding-Refs'
+import Counter from './hooks/Use-Reducer'
 
 const App = () => {
   return (
     <div className='app'>
-      <ForRefDemo />
+      <Counter />
     </div>
   )
 }

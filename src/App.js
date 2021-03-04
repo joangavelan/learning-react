@@ -1,13 +1,11 @@
 import React from 'react'
-import EnhancedComment from './advanced-guides/higher-order-components/CommentCount'
-import EnhancedLikes from './advanced-guides/higher-order-components/LikeCount'
+import Todos from './hooks/use-reducer/Use-Reducer'
 import './index.css'
 
 const App = () => {
   return (
     <div className='app'>
-      <EnhancedLikes />
-      <EnhancedComment />
+      <Todos />
     </div>
   )
 }
